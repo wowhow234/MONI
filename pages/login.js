@@ -1,3 +1,4 @@
+import { signIn } from "next-auth/react";
 import React, { useState } from "react";
 
 const Login = () => {
@@ -11,7 +12,7 @@ const Login = () => {
   // const { savedId, savedPw, savedBirth, savedUsername } = savedAccount;
 
   const [account, setAccount] = useState({
-    userid: "",
+    id: "",
     password: "",
   });
 
@@ -23,8 +24,16 @@ const Login = () => {
     // console.log(account);
   };
 
-  const onClickHandler = (e) => {
-    console.log(account.userid, account.password);
+  const onClickHandler = async (e) => {
+    console.log(account.id, account.password);
+    await signIn("credentials", {
+      // 정보는 [...nextauth].js 에서 봐야함
+      id: account.id.current,
+      password: account.password.current,
+      redirect: true,
+      callbackUrl: "/",
+    });
+
     // 저장된 아디비번 콘솔에 찍기
   };
 
@@ -39,8 +48,8 @@ const Login = () => {
         <span>아이디 : </span>{" "}
         <input
           type="text"
-          name="userid"
-          value={account.userid}
+          name="id"
+          value={account.id}
           placeholder="아이디"
           onChange={onChangeAccount}
         />{" "}

@@ -2,21 +2,11 @@ import Link from "next/link";
 import styles from "../styles/index.module.css";
 
 const Index = () => {
-  const [session, loading] = useSession();
-
-
   return (
     <div className="wrapper">
       ---header---
       <span>로고 ㅇㄹㅇㄹ</span>
-
-      { session &&  "{session.user.id} 안녕하세요" : }
-      <Link legacyBehavior href="/login">
-        <a>로그인</a>
-      </Link>
-      <Link legacyBehavior href="/signup">
-        <a>회원가입</a>
-      </Link>
+      {/* { session &&  "{session.user.id} 안녕하세요" : } */}
       <div className={styles.main}>
         <span>메인 배너</span>
       </div>

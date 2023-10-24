@@ -28,35 +28,32 @@ const NavBar = () => {
         <br />
       </div>
       <hr />
-      <style jsx>
-        {`
-          nav {
-            margin-top: 38px;
-          }
-          span {
-            width: 68px;
-            height: 18px;
-            margin: 38px 30px 104px 0;
-            font-family: Pretendard;
-            font-size: 20px;
-            font-weight: 600;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: -0.2px;
-            text-align: left;
-            color: #383838;
-          }
-          hr {
-  width: 1925px;
-  height: 2px;
-  margin: 25px 42px;
-  border: solid 1px #d3d6d8;
-  background-color: #d3d6d8;
-}
-          }
-        `}
-      </style>
+      <style jsx>{`
+        nav {
+          margin-top: 38px;
+        }
+        span {
+          width: 68px;
+          height: 18px;
+          margin: 38px 30px 104px 0;
+          font-family: Pretendard;
+          font-size: 20px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: -0.2px;
+          text-align: left;
+          color: #383838;
+        }
+        hr {
+          width: 1925px;
+          height: 2px;
+          margin: 25px 0 70px 0;
+          border: solid 1px #d3d6d8;
+          background-color: #d3d6d8;
+        }
+      `}</style>
     </nav>
   );
 };

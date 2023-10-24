@@ -57,71 +57,69 @@ const Header = () => {
           <span class="MY">MY</span>
         </div>
       </div>
-      <style jsx>
-        {`
-          .enrol {
-            margin: 0 0 30px 0;
-            letter-spacing: -0.15px;
-            text-align: left;
-          }
-          .box1 {
-            border: 1px solid red;
-            display: flex;
-            justify-content: space-between;
-          }
-          .box1-1 {
-            border: 1px solid green;
-            // width: fit-content;
-            display: flex;
-          }
-          .box1-1 div {
-            margin: 0 10px;
-          }
-          .box2 {
-            border: 1px solid black;
-            display: flex;
-          }
-          // .search_text {
-          //   width: 68px;
-          //   height: 15px;
-          // //   margin: 0 4px 30px 17px;
-          //   font-family: Pretendard;
-          //   font-size: 15px;
-          //   font-weight: 600;
-          //   font-stretch: normal;
-          //   font-style: normal;
-          //   line-height: normal;
-          //   letter-spacing: -0.15px;
-          //   text-align: left;
-          //   color: #383838;
-          // s}
-          .search_box {
-            width: 532px;
-            height: 20px;
-            // margin: 33px 50px 38px 0;
-            padding: 20px 43px 24px 42px;
-            border-radius: 33.5px;
-            background-color: #e6e6e6;
-            margin-left: 82px;
-            font-size: 20px;
-            border: none;
-          }
-          .cartmy {
-            border: 1px solid blue;
-            margin-left: 466px;
-          }
-          .CART {
-            width: 27px;
-            height: 9px;
-            margin: 8px 3px 45px 5px;
-          }
-          .MY {
-            width: 16px;
-            height: 9px;
-            margin: 8px 22px 45px 1px;
-          }
-        `}
-      </style>
+      <style jsx>{`
+        .enrol {
+          margin: 0 0 30px 0;
+          letter-spacing: -0.15px;
+          text-align: left;
+        }
+        .box1 {
+          border: 1px solid red;
+          display: flex;
+          justify-content: space-between;
+        }
+        .box1-1 {
+          border: 1px solid green;
+          // width: fit-content;
+          display: flex;
+        }
+        .box1-1 div {
+          margin: 0 10px;
+        }
+        .box2 {
+          border: 1px solid black;
+          display: flex;
+        }
+        // .search_text {
+        //   width: 68px;
+        //   height: 15px;
+        // //   margin: 0 4px 30px 17px;
+        //   font-family: Pretendard;
+        //   font-size: 15px;
+        //   font-weight: 600;
+        //   font-stretch: normal;
+        //   font-style: normal;
+        //   line-height: normal;
+        //   letter-spacing: -0.15px;
+        //   text-align: left;
+        //   color: #383838;
+        // s}
+        .search_box {
+          width: 532px;
+          height: 20px;
+          // margin: 33px 50px 38px 0;
+          padding: 20px 43px 24px 42px;
+          border-radius: 33.5px;
+          background-color: #e6e6e6;
+          margin-left: 82px;
+          font-size: 20px;
+          border: none;
+        }
+        .cartmy {
+          border: 1px solid blue;
+          margin-left: 466px;
+        }
+        .CART {
+          width: 27px;
+          height: 9px;
+          margin: 8px 3px 45px 5px;
+        }
+        .MY {
+          width: 16px;
+          height: 9px;
+          margin: 8px 22px 45px 1px;
+        }
+      `}</style>
     </div>
   );
 };

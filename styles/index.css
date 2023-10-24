@@ -1,0 +1,36 @@
+.main {
+  border: 1px solid black;
+  width: 500px;
+  height: 100px;
+  margin: 10px;
+}
+.box1 {
+  border: 1px solid black;
+}
+.logo {
+  width: 149px;
+  height: 58px;
+  margin-right: 82px;
+}
+.search {
+  width: 532px;
+  height: 67px;
+  margin: 33px 50px 38px 0;
+  padding: 20px 43px 24px 42px;
+  border-radius: 33.5px;
+  background-color: #e6e6e6;
+}
+.\- {
+  width: 201px;
+  height: 18px;
+  margin: 4px 223px 1px 0;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  text-align: left;
+  color: #898989;
+}

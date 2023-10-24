@@ -1,29 +1,22 @@
-import Link from "next/link";
-import styles from "../styles/index.module.css";
+// import "../styles/index.css";
+import Main1 from "@/components/Main1";
+import Main2 from "@/components/Main2";
+import Main3 from "@/components/Main3";
+import Ad from "@/components/Ad";
+import Main4 from "@/components/Main4";
+import Main5 from "@/components/Main5";
 
 const Index = () => {
   return (
     <div className="wrapper">
-      ---header---
-      <span>로고 ㅇㄹㅇㄹ</span>
-      {/* { session &&  "{session.user.id} 안녕하세요" : } */}
-      <div className={styles.main}>
-        <span>메인 배너</span>
-      </div>
-      <div className={styles.main}>
-        <span>메인 여러가지</span>
-      </div>
-      <div>
-        ---footer---
-        <br />
-        <Link legacyBehavior href="/notice">
-          <a>공지사항</a>
-        </Link>{" "}
-        <br />
-        <Link legacyBehavior href="/fnq">
-          <a>자주 묻는 질문</a>
-        </Link>
-      </div>
+      ---여기서부터 메인 내용
+      <Main1 />
+      <Main2 />
+      <Main3 />
+      <Ad />
+      <Main4 />
+      <Main5 />
+      ---메인 끝
     </div>
   );
 };

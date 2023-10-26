@@ -22,6 +22,7 @@ const Index = () => {
           border: 3px solid skyblue;
           margin: 70px 0;
         }
+        </>
       `}</style>
     </div>
   );

@@ -51,10 +51,14 @@ const Header = () => {
           {/* <span className="search_text">당신의 취미를 찾아보세요.</span> */}
         </div>
         <div className="cartmy">
-          <img src="/images/index/cart.png" />
-          <span class="CART">CART</span>
-          <img src="/images/index/my.png" />
-          <span class="MY">MY</span>
+          <div className="CART-div">
+            <img src="/images/index/cart.png" />
+            <div className="CART">CART</div>
+          </div>
+          <div className="MY-div">
+            <img src="/images/index/my.png" />
+            <div className="MY">MY</div>
+          </div>
         </div>
       </div>
       <style jsx>{`
@@ -80,24 +84,9 @@ const Header = () => {
           border: 1px solid black;
           display: flex;
         }
-        // .search_text {
-        //   width: 68px;
-        //   height: 15px;
-        // //   margin: 0 4px 30px 17px;
-        //   font-family: Pretendard;
-        //   font-size: 15px;
-        //   font-weight: 600;
-        //   font-stretch: normal;
-        //   font-style: normal;
-        //   line-height: normal;
-        //   letter-spacing: -0.15px;
-        //   text-align: left;
-        //   color: #383838;
-        // s}
         .search_box {
           width: 532px;
           height: 20px;
-          // margin: 33px 50px 38px 0;
           padding: 20px 43px 24px 42px;
           border-radius: 33.5px;
           background-color: #e6e6e6;
@@ -107,18 +96,24 @@ const Header = () => {
         }
         .cartmy {
           border: 1px solid blue;
-          margin-left: 466px;
+          margin-left: auto;
+          /* display: block; */
         }
-        .CART {
-          width: 27px;
-          height: 9px;
-          margin: 8px 3px 45px 5px;
-        }
+        .CART,
         .MY {
-          width: 16px;
+          margin-top: 8px;
+        }
+        .CART-div,
+        .MY-div {
+          border: 2px solid yellow;
+          display: inline-grid;
+          justify-items: center;
+          margin: auto 36px;
+        }
+        /* .MY {
           height: 9px;
           margin: 8px 22px 45px 1px;
-        }
+        } */
       `}</style>
     </div>
   );

@@ -1,9 +1,11 @@
-body {
+html {
   width: 1989px;
   height: auto;
+  background-color: #fff;
+}
+body {
   margin: 0 45px 0 24px;
   padding: 16px 284px 89px;
-  background-color: #fff;
 }
 a {
   text-decoration-line: none;
@@ -16,4 +18,11 @@ span {
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
+}
+hr {
+  width: auto;
+  height: 2px;
+  margin-top: 25px;
+  border: solid 1px #d3d6d8;
+  background-color: #d3d6d8;
 }

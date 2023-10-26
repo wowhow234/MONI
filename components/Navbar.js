@@ -47,13 +47,6 @@ const NavBar = () => {
           text-align: left;
           color: #383838;
         }
-        hr {
-          width: 1925px;
-          height: 2px;
-          margin-top: 25px;
-          border: solid 1px #d3d6d8;
-          background-color: #d3d6d8;
-        }
       `}</style>
     </nav>
   );

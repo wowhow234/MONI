@@ -5,7 +5,9 @@ const Main1 = () => {
   return (
     <div>
       <div className="mainbox1">
-        <img src="/images/index/main-banner.png" />
+        <div className="mb-img">
+          <img src="/images/index/main-banner.png" />
+        </div>
         <div className="mainbox1-1">
           <img src="/images/index/react.png" />
           <img src="/images/index/java.png" />
@@ -25,6 +27,10 @@ const Main1 = () => {
         }
         .mainbox1 {
           border: 2px solid #4b7b00;
+        }
+        .mb-img {
+          /* border: 3px solid blue; */
+          text-align: center;
         }
         .mainbox1-1 {
           display: flex;

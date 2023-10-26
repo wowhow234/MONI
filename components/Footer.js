@@ -28,10 +28,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-box-2">
-          <div className="fb1">MONI CENTER</div>
+          <div className="footer-box-info-1a">MONI CENTER</div>
           <div className="fb2">모니 고객센터</div>
           <div className="fb3">운영시간</div>
-          <div className="fb4">평일 09:00 ~ 18:00 | 점심시간 12:00 ~ 13:00</div>
+          <div className="fb3">평일 09:00 ~ 18:00 | 점심시간 12:00 ~ 13:00</div>
           <div>instagram / naver blog</div>
         </div>
         <div className="footer-box-3">
@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
             <div className="footer-box-info-1b">전화번호 : 1577-4645</div>
           </div>
-          <div className="footer-box-info-1b" style={{ marginTop: "10px" }}>
+          <div className="footer-box-info-1b" style={{ marginTop: "20px" }}>
             Copyright ⓒ2023 moni inc, Itd. All rights reserved
           </div>
         </div>
@@ -63,28 +63,27 @@ const Footer = () => {
           border: 3px solid #ef5b37;
           width: 100%;
           display: flex;
+          flex-wrap: wrap;
         }
         hr {
-          width: 1925px;
-          height: 2px;
           margin-bottom: 40px;
-          border: solid 1px #d3d6d8;
-          background-color: #d3d6d8;
         }
         .footer-box-1 {
-          border: 1px solid red;
+          /* border: 1px solid red; */
           background: #fffff1;
           width: 50%;
+          margin-top: 10px;
         }
         .footer-box-info {
-          border: 1px solid black;
+          /* border: 1px solid black; */
           display: flex;
           margin-bottom: 10px;
         }
+
         .footer-box-info-1a {
           font-weight: 600;
           margin-right: 30px;
-          width: 80px;
+          width: 120px;
         }
         .footer-box-info-1b {
           display: flex;
@@ -92,13 +91,28 @@ const Footer = () => {
           margin-right: 15px;
         }
         .footer-box-2 {
-          border: 1px solid orange;
+          /* border: 1px solid orange; */
           width: 50%;
         }
         .footer-box-3 {
-          border: 1px solid orange;
+          /* border: 1px solid orange; */
           background: #bce4f9;
           margin: 30px 0;
+        }
+        /* div.footer-box-3:last-child {
+          margin-top : 10px;
+        } */
+        div.footer-box-2 > div {
+          font-weight: bold;
+          margin: 10px 0;
+          font-size: 17px;
+        }
+
+        .fb2 {
+          color: #ffa500;
+        }
+        .fb3 {
+          color: #808080;
         }
       `}</style>
     </footer>

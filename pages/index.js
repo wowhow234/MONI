@@ -10,7 +10,6 @@ import Main6 from "@/components/Main6";
 const Index = () => {
   return (
     <div className="wrapper">
-      ---여기서부터 메인 내용
       <Main1 />
       <Main2 />
       <Main3 />
@@ -18,7 +17,12 @@ const Index = () => {
       <Main4 />
       <Main5 />
       <Main6 />
-      ---메인 끝
+      <style jsx>{`
+        .wrapper {
+          border: 3px solid skyblue;
+          margin: 70px 0;
+        }
+      `}</style>
     </div>
   );
 };

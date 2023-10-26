@@ -31,6 +31,7 @@ const NavBar = () => {
       <style jsx>{`
         nav {
           margin-top: 38px;
+          border: 1px solid pink;
         }
         span {
           width: 68px;
@@ -49,7 +50,7 @@ const NavBar = () => {
         hr {
           width: 1925px;
           height: 2px;
-          margin: 25px 0 70px 0;
+          margin-top: 25px;
           border: solid 1px #d3d6d8;
           background-color: #d3d6d8;
         }

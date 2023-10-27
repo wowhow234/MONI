@@ -22,11 +22,8 @@ const Main1 = () => {
         </div>
       </div>
       <style jsx>{`
-        .wrapper {
-          border: 2px solid greenyellow;
-        }
         .mainbox1 {
-          border: 2px solid #4b7b00;
+          /* border: 2px solid #4b7b00; */
         }
         .mb-img {
           /* border: 3px solid blue; */

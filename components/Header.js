@@ -8,29 +8,33 @@ const Header = () => {
   console.log("session 확인----->", session);
 
   return (
-    <div>
+    <header>
       <div className="box1">
         <span className="enrol">클래스 등록</span>
         <div className="box1-1">
           {status === "authenticated" ? (
             <div>
               <span> {session.user.name}님 안녕하세요.</span>
-              <button onClick={() => signOut()}>로그아웃</button>
+              <span onClick={() => signOut()}>로그아웃</span>
             </div>
           ) : (
             <div>
-              <button onClick={() => signIn()}>로그인</button>
-              <button>회원가입</button>
+              <span onClick={() => signIn()}>로그인</span>
+              <span>회원가입</span>
             </div>
           )}
           <div>
             <Link legacyBehavior href="/notice">
-              <a>공지사항</a>
+              <span>
+                <a>공지사항</a>
+              </span>
             </Link>{" "}
           </div>
           <div>
             <Link legacyBehavior href="/fnq">
-              <a>F&Q</a>
+              <span>
+                <a>F&Q</a>
+              </span>
             </Link>
           </div>
         </div>
@@ -68,20 +72,20 @@ const Header = () => {
           text-align: left;
         }
         .box1 {
-          border: 1px solid red;
+          /* border: 1px solid red; */
           display: flex;
           justify-content: space-between;
         }
         .box1-1 {
-          border: 1px solid green;
+          /* border: 1px solid green; */
           // width: fit-content;
           display: flex;
         }
-        .box1-1 div {
+        .box1-1 div span {
           margin: 0 10px;
         }
         .box2 {
-          border: 1px solid black;
+          /* border: 1px solid black; */
           display: flex;
         }
         .search_box {
@@ -95,7 +99,7 @@ const Header = () => {
           border: none;
         }
         .cartmy {
-          border: 1px solid blue;
+          /* border: 1px solid blue; */
           margin-left: auto;
           /* display: block; */
         }
@@ -105,17 +109,15 @@ const Header = () => {
         }
         .CART-div,
         .MY-div {
-          border: 2px solid yellow;
+          /* border: 2px solid yellow; */
           display: inline-grid;
           justify-items: center;
-          margin: auto 36px;
         }
-        /* .MY {
-          height: 9px;
-          margin: 8px 22px 45px 1px;
-        } */
+        .MY-div {
+          margin-left: 40px;
+        }
       `}</style>
-    </div>
+    </header>
   );
 };
 

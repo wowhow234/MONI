@@ -31,13 +31,12 @@ const NavBar = () => {
       <style jsx>{`
         nav {
           margin-top: 38px;
-          border: 1px solid pink;
+          /* border: 1px solid pink; */
         }
         span {
           width: 68px;
           height: 18px;
           margin: 38px 30px 104px 0;
-          font-family: Pretendard;
           font-size: 20px;
           font-weight: 600;
           font-stretch: normal;

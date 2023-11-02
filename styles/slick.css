@@ -1,0 +1,19 @@
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 40px;
+  line-height: 1;
+
+  opacity: 0.75;
+  color: rgb(59, 223, 209);
+}
+/* Arrows */
+.slick-prev,
+.slick-next {
+  display: block;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: #210085;
+}

@@ -1,12 +1,14 @@
 import React from "react";
 import Link from "next/link";
+import SimpleSlider from "./mainbanner";
 
 const Main1 = () => {
   return (
     <div>
       <div className="mainbox1">
-        <div className="mb-img">
-          <img src="/images/index/main-banner.png" />
+        <div>
+          {/* <img src="/images/index/main-banner.png" /> */}
+          <SimpleSlider />
         </div>
         <div className="mainbox1-1">
           <img src="/images/index/react.png" />
@@ -25,10 +27,10 @@ const Main1 = () => {
         .mainbox1 {
           /* border: 2px solid #4b7b00; */
         }
-        .mb-img {
-          /* border: 3px solid blue; */
-          text-align: center;
-        }
+        /* .mb-img { */
+        /* border: 3px solid blue; */
+        /* text-align: center; */
+        /* } */
         .mainbox1-1 {
           display: flex;
           justify-content: space-around;

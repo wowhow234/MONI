@@ -1,6 +1,18 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Main3 = () => {
+  const settings = {
+    dots: false,
+    arrow: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 2,
+  };
+
   return (
     <div>
       <div className="mainbox3">
@@ -9,30 +21,44 @@ const Main3 = () => {
           <span className="text_black">초보도 쉽게 따라하는 클래스</span>
         </div>
         <div className="mainbox3-2">
-          <div className="begin-class-banner-box">
-            <img src="/images/index/begin-class-banner1.png" />
-            <div className="begin-class-banner-bottom">
-              <div className="region">수성</div>
-              <div className="BEST-">[BEST] 어서와 리액트는 처음이지?</div>
-              <span className="star">★</span>
-              <span className="star_count">10</span>
-              <span className="pencil">🖊️</span>
-              <span className="review_count">후기 5</span>
-              <div className="price">39,000원</div>
+          <Slider {...settings}>
+            <div className="begin-class-banner-box">
+              <img src="/images/index/begin-class-banner1.png" />
+              <div className="begin-class-banner-bottom">
+                <div className="region">수성</div>
+                <div className="BEST-">[BEST] 어서와 리액트는 처음이지?</div>
+                <span className="star">★</span>
+                <span className="star_count">10</span>
+                <span className="pencil">🖊️</span>
+                <span className="review_count">후기 5</span>
+                <div className="price">39,000원</div>
+              </div>
             </div>
-          </div>
-          <div className="begin-class-banner-box">
-            <img src="/images/index/begin-class-banner2.png" />
-          </div>
-          <div className="begin-class-banner-box">
-            <img src="/images/index/begin-class-banner3.png" />
-          </div>
-          <div className="begin-class-banner-box">
-            <img src="/images/index/begin-class-banner4.png" />
-          </div>
-          <div className="begin-class-banner-box">
-            <img src="/images/index/begin-class-banner5.png" />
-          </div>
+            <div className="begin-class-banner-box">
+              <img src="/images/index/begin-class-banner2.png" />
+            </div>
+            <div className="begin-class-banner-box">
+              <img src="/images/index/begin-class-banner3.png" />
+            </div>
+            <div className="begin-class-banner-box">
+              <img src="/images/index/begin-class-banner4.png" />
+            </div>
+            <div className="begin-class-banner-box">
+              <img src="/images/index/begin-class-banner5.png" />
+            </div>
+            <div className="begin-class-banner-box">
+              <img src="/images/index/top-class-banner1.png" />
+            </div>
+            <div className="begin-class-banner-box">
+              <img src="/images/index/top-class-banner3.png" />
+            </div>
+            <div className="begin-class-banner-box">
+              <img src="/images/index/top-class-banner7.png" />
+            </div>
+            <div className="begin-class-banner-box">
+              <img src="/images/index/top-class-banner8.png" />
+            </div>
+          </Slider>
         </div>
       </div>
       <style jsx>{`
@@ -56,15 +82,15 @@ const Main3 = () => {
         }
         .mainbox3-2 {
           border: 3px solid pink;
-          display: flex;
-          justify-content: space-between;
+          /* display: flex;
+          justify-content: space-between; */
           margin-bottom: 80px;
         }
         .begin-class-banner-box {
           border: 2px solid yellow;
           width: fit-content;
-          display: flex;
-          flex-direction: column;
+          /* display: flex;
+          flex-direction: column; */
         }
         .begin-class-banner-bottom {
           border: 2px solid black;

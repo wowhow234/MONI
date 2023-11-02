@@ -47,12 +47,13 @@ const Header = () => {
             </a>
           </Link>
         </div>
-        <div>
+        <div className="search">
           <input
             placeholder="당신의 취미를 찾아보세요."
-            className="search_box"
-          ></input>
-          {/* <span className="search_text">당신의 취미를 찾아보세요.</span> */}
+            name="search"
+            id="search"
+          />
+          <img src="/images/index/search.png" className="img-search" />
         </div>
         <div className="cartmy">
           <div className="CART-div">
@@ -88,15 +89,28 @@ const Header = () => {
           /* border: 1px solid black; */
           display: flex;
         }
-        .search_box {
-          width: 532px;
+        .search {
+          position: relative;
+          width: 600px;
+          /* border: 1px solid black; */
+          margin-left: 82px;
+        }
+        input {
+          width: 100%;
           height: 20px;
-          padding: 20px 43px 24px 42px;
+          padding: 20px 40px;
           border-radius: 33.5px;
           background-color: #e6e6e6;
-          margin-left: 82px;
           font-size: 20px;
           border: none;
+        }
+        .img-search {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          top: 20px;
+          right: -40px;
+          margin: 0;
         }
         .cartmy {
           /* border: 1px solid blue; */

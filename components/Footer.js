@@ -3,7 +3,6 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
-      <hr />
       <div className="footer_wrapper">
         <div className="footer-box-1">
           <div className="footer-box-info">
@@ -64,9 +63,6 @@ const Footer = () => {
           width: 100%;
           display: flex;
           flex-wrap: wrap;
-        }
-        hr {
-          margin-bottom: 40px;
         }
         .footer-box-1 {
           /* border: 1px solid red; */
